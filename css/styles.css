@@ -22,6 +22,11 @@ body {
     letter-spacing: 0.03em;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .list {
     padding: 0;
     margin: 0;
@@ -381,19 +386,25 @@ footer {
     margin-top: -30px;
     
     
+    
 }
 
 
 .projects .item {
     margin-left: 30px;
     margin-top: 30px;
-    border: 1px solid #EEEEEE;
-    /* flex-basis: calc((100% - 90px) / 3); */
-    width: 370px;
+    
+    
+    
+    flex-basis: calc((100% - 90px) / 3);
+    
 }
 
-.item .description {
+.item .content {
     padding: 20px 24px;
+    
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .projects .name{
