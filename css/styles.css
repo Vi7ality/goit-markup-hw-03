@@ -11,7 +11,9 @@
     --tittle-text-color: #212121;
     --accent-text-color: #2196F3;
     --primary-white-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
     --additional-background-color: #2F303A;
+    --box-shadow-color: rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -25,6 +27,7 @@ body {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 .list {
@@ -48,7 +51,7 @@ img {
     padding-bottom: 94px;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
+h1, h2, h3, h4, h5, h6, p, {
     margin-top: 0;
     margin-bottom: 0;
 
@@ -87,7 +90,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 header {
     padding-top: 24px;
     padding-bottom: 25px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav {
@@ -172,10 +175,10 @@ margin-right: 50px;
 }
 
 .button {
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background:var(--accent-text-color);
+    box-shadow: 0px 4px 4px var(--box-shadow-color);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--primary-white-color);
     cursor: pointer;
 
     
@@ -186,7 +189,7 @@ margin-right: 50px;
     letter-spacing: 0.06em;
     border: none;
     padding: 10px 32px;
-    min-width: 200px;
+    
     
 }
 
@@ -254,7 +257,7 @@ width: 270px
 
 /* Team */
 .team.section {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-background-color);
     
 }
 
@@ -276,7 +279,10 @@ width: 270px
     margin-right: 30px;
 }
 
-
+.our-team .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .our-team .name {
     color: var(--tittle-text-color);
@@ -286,8 +292,6 @@ width: 270px
     line-height: 1.19;
 
     margin-bottom: 10px;
-    padding-top: 30px;
-
 }
 
 .our-team .staff {
@@ -295,13 +299,10 @@ width: 270px
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    padding-bottom: 30px;
-    
-
 }
+
 /* Footer */
 
-/* !Background temporary added! */
 footer {
     background: var(--additional-background-color);
     padding-top: 60px;
@@ -378,7 +379,7 @@ footer {
 
 .project-nav .filter:hover, .project-nav .filter:focus {
     background-color: var(--accent-text-color);
-    color: white;
+    color: var(--primary-white-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     
 }
@@ -405,7 +406,7 @@ footer {
     
 }
 
-.item .content {
+.projects .content {
     padding: 20px 24px;
     
     border: 1px solid #EEEEEE;
@@ -417,9 +418,11 @@ footer {
 
     font-size: 18px;
     line-height: 2;
+    margin-bottom: 4px;
 }
 
 .projects .type {
     font-size: 16px;
     line-height: 1.88;
+    margin: 0;
 }
